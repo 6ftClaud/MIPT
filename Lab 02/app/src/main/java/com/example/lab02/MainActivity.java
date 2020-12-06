@@ -16,10 +16,10 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
 
     int count;
-    String text = new String();
-    Button Button1;
-    EditText Text1;
-    TextView Text2;
+    String text;
+    Button button;
+    EditText input;
+    TextView answer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,17 +27,17 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button1 = (Button)findViewById(R.id.Button1);
-        Text1 = (EditText)findViewById(R.id.Text1);
-        Text2 = (TextView)findViewById(R.id.Text2);
+        button = (Button)findViewById(R.id.Button1);
+        input = (EditText)findViewById(R.id.Text1);
+        answer = (TextView)findViewById(R.id.Text2);
 
-        Button1.setOnClickListener(new View.OnClickListener() {
+        button.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                if (Text1.getText().length() > 0) {
-                text = Text1.getText().toString();
+                if (input.getText().length() > 0) {
+                text = input.getText().toString();
                 count = Functions.CountWords(text);
                 String value=String.valueOf(count);
-                Text2.setText(value);
+                answer.setText(value);
                 }
                 else {
                     Toast.makeText(getApplicationContext(),"Input is empty",Toast.LENGTH_SHORT).show();
