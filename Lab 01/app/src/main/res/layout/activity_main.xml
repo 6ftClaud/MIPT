@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="182dp"
+        android:layout_height="90dp"
+        android:backgroundTint="#673AB7"
+        android:text="Reset"
+        tools:layout_editor_absoluteX="203dp"
+        tools:layout_editor_absoluteY="445dp" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="182dp"
+        android:layout_height="90dp"
+        android:backgroundTint="#673AB7"
+        android:backgroundTintMode="src_in"
+        android:text="Set Text"
+        tools:layout_editor_absoluteX="203dp"
+        tools:layout_editor_absoluteY="625dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="182dp"
+        android:layout_height="90dp"
+        android:backgroundTint="#673AB7"
+        android:text="Change Color"
+        tools:layout_editor_absoluteX="203dp"
+        tools:layout_editor_absoluteY="535dp" />
+
+    <TextView
+        android:id="@+id/TextView"
+        android:layout_width="334dp"
+        android:layout_height="102dp"
+        android:layout_marginTop="4dp"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Currently supposed to be nothing here" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,3 @@
+ISKS9 2020 mobiliųjų įrenginių programavimo technologijos
+_________________________
+Klaudijus Kungys
