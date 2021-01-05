@@ -1,4 +1,4 @@
-package com.example.lab04;
+ cWZEX wecl;llllllllllxzčsdėxpackage com.example.lab04;
 
 import android.database.Cursor;
 import android.os.Bundle;
